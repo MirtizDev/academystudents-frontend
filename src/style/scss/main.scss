@@ -1,0 +1,34 @@
+@import "./variables"; 
+@import "./base";
+@import "./nav";
+@import "./header";
+@import "./course";
+@import "./footer";
+@import "./about";
+@import "./contact";
+@import "./loading";
+@import "./courseDetail";
+@import "./login";
+
+body{
+    cursor: url('../../../public/images/cursor.svg'), auto !important;
+}
+.up_btn{
+    &:visited,
+    &:link{
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+        text-decoration: none;
+        padding: 2rem;
+        background-color: $color-primary;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+    }
+    
+}

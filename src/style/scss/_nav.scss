@@ -1,0 +1,227 @@
+// .nav{
+//     padding: 2rem;
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+//     width: 100%;
+//     align-items: center;
+//     background-color: #001432;
+
+//     &__btn{
+//         position: absolute;
+//         top: 2rem;
+//         left: 17rem; 
+//         background-color: transparent;
+//         border: none;
+//         outline: none;
+//         color: #fff;
+//         z-index: 1;
+//         svg{
+//             width: 3rem;
+//             height: 3rem;
+//             fill: #fff;
+//         }
+        
+//     }
+//     &__content{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column;
+//         width: 100%;
+//         height: 100%;
+//     }
+   
+//     &__wrap{
+//         height: 100vh;
+//         width:20%;
+//         z-index: 2;
+//     }
+
+//     &__logo-wrap{
+//         display: flex;
+//         align-items: center;
+//         margin-bottom: 4rem;
+//         p{
+//             font-size: 2.0rem;
+//             margin-left: 2rem;
+//             color: #fff;
+//             span{
+//                 margin-right: 1rem;
+//                 font-size: 2rem;
+//                 line-height: 1.5;
+//             }
+//         }
+        
+//     }
+
+//     &__item-wrap{
+//         display: flex; 
+//         flex-direction: column  ;
+//         list-style: none;
+//         gap: 4rem;
+//     }
+
+//     &__logo{
+//         width: 8rem;
+//     }
+
+//     &__item{
+//         a:visited,
+//         a:link{
+//             text-decoration: none;
+//             color: #fff;
+//             font-size: 2rem;
+//             position: relative;
+//             display: inline;
+//         }
+//         a::before{
+//             content: '';
+//             height: 3px;
+//             width: 0%;
+//             position: absolute;
+//             bottom: -.2rem;
+//             left: 0;
+//             background-color: $color-primary;
+//             transition: all .3s;
+//         }
+//         a:hover{
+//             &::before{
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }
+
+
+
+.nav{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__wrap{
+    }
+
+    &__logo-wrap{
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 2.0rem;
+            margin-left: 2rem;
+            color: black;
+            span{
+                margin-right: 1rem;
+                font-size: 2rem;
+                line-height: 1.5;
+            }
+        }
+         
+    }
+
+    &__item-wrap{
+        display: flex; 
+        list-style: none;
+        gap: 3rem;
+    }
+
+    &__logo{
+        width: 8rem;
+    }
+
+    &__item{
+        p{
+            font-size: 1.6rem;
+        }
+        a:visited,
+        a:link{
+            text-decoration: none;
+            color: black !important;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline ;
+        }
+        a::before{
+            content: '';
+            height: 3px;
+            width: 0%;
+            position: absolute;
+            bottom: -.2rem;
+            left: 0;
+            background-color: $color-primary;
+            transition: all .3s;
+        }
+        a:hover{
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+.navdark{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__wrap{
+    }
+
+    &__logo-wrap{
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 2.0rem;
+            margin-left: 2rem;
+            color: #fff;
+            span{
+                margin-right: 1rem;
+                font-size: 2rem;
+                line-height: 1.5;
+            }
+        }
+        
+    }
+
+    &__item-wrap{
+        display: flex; 
+        list-style: none;
+        gap: 3rem;
+    }
+
+    &__logo{
+        width: 8rem;
+    }
+
+    &__item{
+        p{
+            font-size: 1.6rem;
+            color: #fff;
+        }
+        a:visited,
+        a:link{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline ;
+        }
+        a::before{
+            content: '';
+            height: 3px;
+            width: 0%;
+            position: absolute;
+            bottom: -.2rem;
+            left: 0;
+            background-color: $color-primary;
+            transition: all .3s;
+        }
+        a:hover{
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+}

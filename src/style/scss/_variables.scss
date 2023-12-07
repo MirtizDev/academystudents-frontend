@@ -1,0 +1,9 @@
+$color-primary:#548ca8;
+$color-secondary:#808d93;
+
+.border-bottom{
+    border-bottom: 3px solid $color-primary;
+    width:20%;
+    transition: all .3s;
+}
+

@@ -1,0 +1,61 @@
+.footer{
+    background-color: #001432;
+    color: #fff;
+    height: 17vh;
+    width: 100%;
+    margin-top: 2rem;
+    .container{
+        height: 100%;
+    }
+    &__inner{      
+        display: grid;
+        grid-template-columns: repeat(3,1fr);    
+        justify-content: center;
+        align-items: center; 
+        height: 100%;
+    }
+
+    &__text{
+        display: flex;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }     
+
+    &__img-wrap{
+        width: 100%;
+        display: flex;   
+        justify-content: center;
+
+    }
+    &__img{
+        width: 25%;
+    }
+
+
+    &__list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    &__list-item{
+
+    }
+
+    &__link{
+        &:visited,
+        &:link{
+            text-decoration: none;
+            color: #fff;
+            font-size: 2.5rem;
+            transition: all .2s;
+            
+        }
+        &:hover{
+            color: rgba($color: #fff, $alpha: .7);
+        }
+    }
+}

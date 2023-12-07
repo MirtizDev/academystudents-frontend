@@ -1,0 +1,27 @@
+.course-detail{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    &__img{
+        width: 70%;
+        justify-self: end;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    &__name{
+        font-size: 3.5rem;
+    }
+    &__description{
+        font-size: 2rem;
+    }
+    &__price{
+        font-size: 2rem;
+        font-weight:600;
+    }
+}
