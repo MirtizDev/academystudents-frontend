@@ -156,6 +156,29 @@ body{
   height: 100vh;
   z-index: 0;
 
+  &__btn{
+    background-color: #fff;
+    font-size: 2.5rem;
+    border: none;
+  }
+
+  &__body{
+    width: 30%;
+    height: 100vh;
+    background-color: $color-primary;
+    padding: 3rem;
+  }
+
+  &__item{
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    svg{
+      font-size: 4rem;
+    }
+  }
+
   &__close{
     position: absolute;
     z-index: 5;

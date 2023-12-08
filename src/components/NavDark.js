@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import {LuLogIn} from 'react-icons/lu'
 import {AiOutlineLogin} from 'react-icons/ai'
 import {BiLogOut} from 'react-icons/bi'
+import OffCanvas from './OffCanvas'
 import axios from 'axios'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
@@ -80,12 +81,13 @@ function NavDark() {
             <>
               {isLogin ? (
                 <>
-                <div className="navdark__item">
+                {/* <div className="navdark__item">
                 <p>Xoş gəlmisən,{exactUsername}</p>   
               </div>
                 <div className="navdark__item">
                 <Link onClick={handleClick}><BiLogOut/> Logout</Link>                               
-              </div>
+              </div> */}
+                <OffCanvas/>
               
                 </>
                 

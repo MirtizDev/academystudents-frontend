@@ -4,6 +4,7 @@ import Nav from "./Nav";
 import { useDispatch, useSelector } from "react-redux";
 import { login, setLoginData, setExactUsername,setEmail } from "../stores/auth";
 import Alertim from "./Alertim";
+import { redirect } from "react-router-dom";
 
 function Login() {
   const [error, setError] = useState(false);
@@ -45,7 +46,8 @@ function Login() {
         setPassword('')
       }
       if(result.status != 401){
-        getUser()
+        getUser();
+        return redirect("/")
       } 
       }
       catch (e) {
@@ -88,7 +90,6 @@ function Login() {
         localStorage.setItem("exactUsername",exactUser[0].userName);
         setEmail('')
         setPassword('')
-        // window.location.href='/'
     }
     
   }

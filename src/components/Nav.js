@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux'
 import { login,logout, setExactUsername } from '../stores/auth'
 import axios from 'axios';
 import LoadingScreen from './LoadingScreen';
+import OffCanvas from './OffCanvas'
 function Nav() {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -87,12 +88,13 @@ function Nav() {
              <>
              {isLogin ? (
                <>
-               <div className="nav__item">
+               {/* <div className="nav__item">
                  <p>Xoş gəlmisən,{exactUsername}</p>
                </div>
                <div className="nav__item" >
                <Link onClick={handleClick}><BiLogOut/> Logout</Link>
-             </div>
+             </div> */}
+             <OffCanvas/>
                </>
 
              )  : (
